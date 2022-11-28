@@ -11,7 +11,6 @@ const booksArr = [
 
 
 
-const bookContainer = document.querySelector('.books-wrapper')
 
 booksArr.map((item,index) => document
   .getElementById('books').innerHTML += `
@@ -32,31 +31,45 @@ booksArr.map((item,index) => document
   </section>`);
 
 
+function loadBooks(title,author){
+  document.getElementById('books').innerHTML += `
+  <section class="books-wrapper">
+  <table class="book-container"> 
+  <tr>
+    <td>
+     ${title}
+       </td>
+  </tr>
+
+  <tr>
+    <td>${author}</td>    
+  </tr>
+</table>
+<input type="button" value="Remove">
+<hr>
+  </section>`;
+
+}
+
+
   function addBooks() {
     const form = document.querySelector('form');
     form.addEventListener('submit', (e) => {
       e.preventDefault();
   
-      const title = document.querySelector('.title').value
+    const title = document.querySelector('.title').value
     const author = document.querySelector('.author').value
-    console.log(title,author)
-  
+    if(title!='' && author!=''){
+      loadBooks(title,author);
     booksArr.push({title,author})
-      console.log(booksArr)
+    localStorage.setItem('books', JSON.stringify(booksArr));
+    }
+    document.querySelector('.title').value = '';
+    document.querySelector('.author').value = ''; 
     });
     
   }
 
-
-  function deleteBooks() {
-    const books = this.booksArr;
-    console.log(books)
-    books.forEach((book,index) => {
-      books.splice(index,1);
-    });
-    localStorage.setItem('books',JSON.stringify('books')) 
-
-    } 
 
 //     deleteBooks();
 // console.log(booksArr)
