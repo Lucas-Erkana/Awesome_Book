@@ -11,8 +11,9 @@ const booksArr = [
 
 
 
+const bookContainer = document.querySelector('.books-wrapper')
 
-booksArr.map((item) => document
+booksArr.map((item,index) => document
   .getElementById('books').innerHTML += `
   <section class="books-wrapper">
   <table class="book-container"> 
@@ -26,7 +27,7 @@ booksArr.map((item) => document
     <td>${item.Author}</td>    
   </tr>
 </table>
-<input type="button" value="Remove">
+<input class='removeButton${index}' type="button" value="Remove">
 <hr>
   </section>`);
 
@@ -45,7 +46,36 @@ booksArr.map((item) => document
     });
     
   }
-  console.log(booksArr)
 
+
+  function deleteBooks() {
+    const books = this.booksArr;
+    console.log(books)
+    books.forEach((book,index) => {
+      books.splice(index,1);
+    });
+    localStorage.setItem('books',JSON.stringify('books')) 
+
+    } 
+
+//     deleteBooks();
+// console.log(booksArr)
   
+
+  function removeBooks() {
+   this.bookContainer.addEventListener('click', (e) =>  {
+      if(e.target.classList.contains('removeButton${index}')){
+        e.target.parentElement.parentElement.remove();
+      }
+      this.deleteBooks();
+    });
+  }
+
+  // function removeBooks() { 
+  //   const filteredBooksArr = booksArr.filter ((item) => {
+  //     return bookArr(0);
+
+  //   }
+  // )}
+
  
