@@ -11,8 +11,7 @@ const booksArr = [
 
 
 
-
-booksArr.map((item) => document
+  booksArr.map((item) => document
   .getElementById('books').innerHTML += `
   <section class="books-wrapper">
   <table class="book-container"> 
@@ -31,21 +30,45 @@ booksArr.map((item) => document
   </section>`);
 
 
+function loadBooks(title,author){
+  document.getElementById('books').innerHTML += `
+  <section class="books-wrapper">
+  <table class="book-container"> 
+  <tr>
+    <td>
+     ${title}
+       </td>
+  </tr>
+
+  <tr>
+    <td>${author}</td>    
+  </tr>
+</table>
+<input type="button" value="Remove">
+<hr>
+  </section>`;
+
+}
+
+
   function addBooks() {
     const form = document.querySelector('form');
     form.addEventListener('submit', (e) => {
       e.preventDefault();
   
-      const title = document.querySelector('.title').value
+    const title = document.querySelector('.title').value
     const author = document.querySelector('.author').value
-    console.log(title,author)
-  
+    if(title!='' && author!=''){
+      loadBooks(title,author);
     booksArr.push({title,author})
-      console.log(booksArr)
+    localStorage.setItem('books', JSON.stringify(booksArr));
+    }
+    document.querySelector('.title').value = '';
+    document.querySelector('.author').value = ''; 
     });
     
   }
-  console.log(booksArr)
+
 
   
  
