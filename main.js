@@ -1,30 +1,51 @@
-constructor() {
-    this.bookList = [];
-    this.container = document.querySelector('.book-container');
+const booksArr = [
+  {
+    Title : "lorem ipsum",
+    Author : "Testeroo Testyy" 
+  },
+  {
+    Title : "Second Book",
+    Author : "Testeroo Testyy" 
   }
+]
 
 
 
-  addBookToList(book) {
-    const row = document.createElement('tr');
-    row.innerHTML = `
-      <td>"${book.title}" by ${book.author}</td>
-      <td><button class= "remove-btn">Remove</button></td>
-      `;
-    this.container.append(row);
-  }
 
-  AppendBook() {
+booksArr.map((item) => document
+  .getElementById('books').innerHTML += `
+  <section class="books-wrapper">
+  <table class="book-container"> 
+  <tr>
+    <td>
+     ${item.Title}
+       </td>
+  </tr>
+
+  <tr>
+    <td>${item.Author}</td>    
+  </tr>
+</table>
+<input type="button" value="Remove">
+<hr>
+  </section>`);
+
+
+  function addBooks() {
     const form = document.querySelector('form');
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      const title = document.querySelector('.title').value;
-      const author = document.querySelector('.author').value;
-      this.addBookToList({ title, author });
-      this.bookList.push({ title, author });
-      localStorage.setItem('books', JSON.stringify(this.bookList));
-      // Clear form input's values
-      document.querySelector('.title').value = '';
-      document.querySelector('.author').value = '';
+  
+      const title = document.querySelector('.title').value
+    const author = document.querySelector('.author').value
+    console.log(title,author)
+  
+    booksArr.push({title,author})
+      console.log(booksArr)
     });
+    
   }
+  console.log(booksArr)
+
+  
+ 

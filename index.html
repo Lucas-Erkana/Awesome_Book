@@ -10,37 +10,10 @@
 <body class="header">
 
   <main class="all-sections">
-    <section class="book-section sections sec1 activesec" id="bookss">
+    <section class="book-section sections sec1 activesec" id="books">
       <h1>All awesome books</h1>
-      <table class="book-container"> 
-        <tr>
-          <td>
-            Lorem ipsum
-             </td>
-        </tr>
-
-        <tr>
-          <td>Testroo Testyy</td>
-          
-        </tr>
-      </table>
-      <input type="button" value="Remove">
-      <hr>
-      <table class="book-container"> 
-        <tr>
-          <td>
-            Second Book
-             </td>
-        </tr>
-
-        <tr>
-          <td>Testroo Testyy</td>
-          
-        </tr>
-      </table>
-      <input type="button" value="Remove">
+     
   </section>
-  <hr>
   <section class="form-section sections sec2" id="inputss">
     <form class="form-container">
         <h2>Add new book here</h2>
@@ -50,9 +23,10 @@
         <input type="text" placeholder="Author" class="author book-author" required>
       <br>
       <br>
-        <input type="submit" class="add-btn add-book" value="Add">
+        <input onclick="addBooks()" type="submit" class="add-btn add-book" value="Add">
     </form>
 </section>
   </main>
+  <script src="main.js"></script>
 </body>
 </html>
