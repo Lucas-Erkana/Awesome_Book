@@ -7,17 +7,13 @@ This is an example of how you may give instructions on setting up your project l
 Modify this file to match your project and remove sections that don't apply.
 =======
 
-## Capstone-Project: Programming Competion-page
+## Awesome books Project
 
-This project is about a Programming competition which was held in Windhoek, Namibai at the Namibia Univeristy of Science and Technology.
-The Faculty of Computing and Informatics invited high schools and tertiary students to participate in the 7th NUST Annual National Programming Competition.
-There were amazing prizes to be won such as cash prizes, trophies, gadgets, medals and much more.
-This is made as Final Project (Capstone), of 1st Module at Microverse in order to attract job opportunities.
-The main objective is to develop a professional website which showcase my professional skills and also will meet the requirements of a client and be able to meet deadlines.
+This project is about a basic website that allows users to add/remove books from a list. We will achieve that by using JavaScript objects and arrays. 
+We will also dynamically modify the DOM and add basic events.
 
 
-[Loom Video Presentation](https://www.loom.com/share/d944d03df6ae4517b6de41aefbb00da7)
->>>>>>> efb449574a89f51f74a8b2fc2fbc8a9489b5f399
+
 
 REQUIRED SECTIONS:
 - Table of Contents
@@ -63,11 +59,9 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 Capstone-Project: Programming Competion-page <a name="about-project"></a>
 
-**[Capstone-Project: Programming Competion-page]** is about a Programming competition which was held in Windhoek, Namibai at the Namibia Univeristy of Science and Technology.
-The Faculty of Computing and Informatics invited high schools and tertiary students to participate in the 7th NUST Annual National Programming Competition.
-There were amazing prizes to be won such as cash prizes, trophies, gadgets, medals and much more.
-This is made as Final Project (Capstone), of 1st Module at Microverse in order to attract job opportunities.
-The main objective is to develop a professional website which showcase my professional skills and also will meet the requirements of a client and be able to meet deadlines.
+**[Awesome books]** is about a basic website that allows users to add/remove books from a list. We will achieve that by using JavaScript objects and arrays. 
+We will also dynamically modify the DOM and add basic events.
+
 
 [Loom Video Presentation](https://www.loom.com/share/d944d03df6ae4517b6de41aefbb00da7)
 
