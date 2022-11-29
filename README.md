@@ -57,7 +57,7 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Awesome Bookt<a name="about-project"></a>
+# 📖 Awesome Book<a name="about-project"></a>
 
 **[Awesome books]** is about a basic website that allows users to add/remove books from a list. We will achieve that by using JavaScript objects and arrays. 
 We will also dynamically modify the DOM and add basic events.
