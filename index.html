@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Awesome Book List Project</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <title>Awesome Book List Project</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <div class="container mt-4">
-    <h1 class="display-4 text-center">
-      Awersome Book List</h1>
-      <table class="table table-striped mt-5">
-    
-        <tbody id="book-list">
-         
-        </tbody>
-        
-      </table>
-      <br>
-      <br>
-      <form id="book-form">
+    <h1 class="display-6 text-center">
+      All awesome books</h1>
+    <table class="table table-striped mt-3 table-striped table-sm">
+
+      <tbody id="book-list">
+
+      </tbody>
+
+    </table>
+    <div class="line"></div>
+    <h1 class="display-6 text-center">Add a new book</h1>
+    <form id="book-form">
       
-          <input type="text" id="title" class="form-control" value="Title">
-       
-        <br>
-        <br>
-          <input type="text" id="author" class="form-control" value="Author">
-        <br>
-        <br>
-        <input type="submit" value="Add" class="btn btn-primary btn-block">
-      </form>
+      <input type="text" id="title" class="form-control" value="Title">
+      <br>
+      <input type="text" id="author" class="form-control" value="Author">
+      <br>
+      <input type="submit" value="Add" class="btn btn-primary btn-block">
+    </form>
 
   </div>
 
 
-  <script src="main.js"></script>
+  <script src="main.js" type="module"></script>
 </body>
+
 </html>

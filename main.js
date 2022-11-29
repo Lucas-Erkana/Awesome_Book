@@ -1,41 +1,6 @@
-// Book Class: Represents a Book
-
-class Book {
-  constructor(title, author) {
-    this.title = title;
-    this.author = author;
-  }
-}
-
-// Store Class: Handle Storage to browser
-class Store {
-  static getBooks() {
-    let books;
-    if (localStorage.getItem('books') === null) {
-      books = [];
-    } else {
-      books = JSON.parse(localStorage.getItem('books'));
-    }
-    return books;
-  }
-
-  static addBook(book) {
-    const books = Store.getBooks();
-    books.push(book);
-    localStorage.setItem('books', JSON.stringify(books));
-  }
-
-  static removeBook(author) {
-    const books = Store.getBooks();
-    books.forEach((book, index) => {
-      if (book.author === author) {
-        books.splice(index, 1);
-      }
-    });
-    localStorage.setItem('books', JSON.stringify(books));
-  }
-}
-
+/* eslint-disable linebreak-style */
+import Book from './module/constructor.js';
+import Store from './module/store.js';
 // UI Class: Handle UI Tasks
 class UI {
   static displayBooks() {
@@ -49,13 +14,12 @@ class UI {
     const row = document.createElement('tr');
     // element.classList.add('table-row');
     row.innerHTML = `
-      <td>${book.title}
-      </td>
+      <td class="book-title">"${book.title}" </td>
+      <td> by</td>
       <td>${book.author}</td>
       <td>
       <input class='btn btn-danger btn-sm delete' type="button" value="Remove">
-      </td>
-      <hr>
+     </td>
     `;
     list.appendChild(row);
   }

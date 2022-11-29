@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,700;1,400&display=swap');
 
 * {
   box-sizing: border-box;
   margin: 0.2vw;
   padding: 0;
+  font-family: 'Comic Neue', cursive;
 }
 
 .table {
@@ -17,5 +19,27 @@
 
 tr {
   display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  width: fit-content;
+}
+
+#book-form {
+  display: flex;
   flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.book-title {
+  justify-self: flex-start;
+}
+
+.line {
+  background-color: black;
+  height: 2px;
+  width: 20%;
+  margin-left: 40%;
 }
