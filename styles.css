@@ -22,3 +22,14 @@ tr {
 .btn {
   width: fit-content;
 }
+
+#book-form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.book-title {
+  justify-self: flex-start;
+}
