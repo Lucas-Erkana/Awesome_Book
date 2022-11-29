@@ -62,10 +62,10 @@ class Store{
     localStorage.setItem('books',JSON.stringify(books));
   }
 
-  static removeBook(title) {
+  static removeBook(author) {
     const books = Store.getBooks();
     books.forEach((book, index) => {
-      if(book.title === title) {
+      if(book.author === author) {
 
         books.splice(index, 1);
       }
@@ -100,5 +100,9 @@ document.querySelector('#book-form').addEventListener('submit', (e) => {
 
 // Delete a book
 document.querySelector('#book-list').addEventListener('click', (e) => {
+  // remove book from UI
   UI.deleteBook(e.target);
+
+  // remove book from broswer storage according to author
+  Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
 });
