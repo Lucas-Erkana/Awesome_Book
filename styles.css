@@ -36,3 +36,10 @@ tr {
 .book-title {
   justify-self: flex-start;
 }
+
+.line {
+  background-color: black;
+  height: 2px;
+  width: 20%;
+  margin-left: 40%;
+}
