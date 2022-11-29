@@ -11,9 +11,14 @@
 
 #book-list {
   display: flex;
+  flex-direction: column;
 }
 
 tr {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btn {
+  width: fit-content;
 }
