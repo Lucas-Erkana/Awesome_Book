@@ -9,17 +9,9 @@ class Book {
 // UI Class: Handle UI Tasks
 class UI {
   static displayBooks() {
-    const StoredBooks = [
-      {
-        title: 'lorem ipsum',
-        author: 'Testeroo Testyy',
-      },
-      {
-        title: 'Second Book',
-        author: 'Testeroo Testyy',
-      },
-    ];
-    const books = StoredBooks;
+ 
+    const books = Store.getBooks();
+
     books.forEach((book) => UI.addBookToList(book));
   }
 
@@ -52,6 +44,35 @@ class UI {
   }
 }
 
+// Store Class: Handle Storage to browser
+class Store{
+  static getBooks() {
+    let books;
+    if(localStorage.getItem('books') === null){
+      books = [];
+    } else {
+      books = JSON.parse(localStorage.getItem('books'));
+    }
+    return books;
+  }
+
+  static addBook(book) {
+    const books = Store.getBooks();
+    books.push(book);
+    localStorage.setItem('books',JSON.stringify(books));
+  }
+
+  static removeBook(title) {
+    const books = Store.getBooks();
+    books.forEach((book, index) => {
+      if(book.title === title) {
+
+        books.splice(index, 1);
+      }
+    });
+    localStorage.setItem('books',JSON.stringify(books));
+  }
+}
 // Event: Display Books
 document.addEventListener('DOMContentLoaded', UI.displayBooks);
 
@@ -69,6 +90,9 @@ document.querySelector('#book-form').addEventListener('submit', (e) => {
 
   // Add Book to UI
   UI.addBookToList(book);
+
+  //Add book to storage
+  Store.addBook(book);
 
   // Clear fields
   UI.clearFields();
