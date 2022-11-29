@@ -14,7 +14,9 @@ class UI {
     const row = document.createElement('tr');
     // element.classList.add('table-row');
     row.innerHTML = `
-      <td class="book-title">"${book.title}" by ${book.author}</td>
+      <td class="book-title">"${book.title}" </td>
+      <td> by</td>
+      <td>${book.author}</td>
       <td>
       <input class='btn btn-danger btn-sm delete' type="button" value="Remove">
      </td>
