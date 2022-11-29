@@ -172,9 +172,7 @@ Give a ⭐️ if you like this project!
 
 
 
-[Fontawsome](https://fontawesome.com/) Special thanks to fontawsome for the icons assets.
 
-Alex Ogeto[@alex_ogeto](https://github.com/Osoro254Alex) Special thanks for motivating me.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
