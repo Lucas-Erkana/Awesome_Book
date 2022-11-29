@@ -1,3 +1,21 @@
-body {
-  background: red;
+
+* {
+  box-sizing: border-box;
+  margin: 0.2vw;
+  padding: 0;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+}
+
+#book-list {
+  display: flex;
+  flex-direction: column;
+}
+
+tr {
+  display: flex;
+  flex-direction: column;
 }
