@@ -57,13 +57,13 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Capstone-Project: Programming Competion-page <a name="about-project"></a>
+# 📖 Awesome Bookt<a name="about-project"></a>
 
 **[Awesome books]** is about a basic website that allows users to add/remove books from a list. We will achieve that by using JavaScript objects and arrays. 
 We will also dynamically modify the DOM and add basic events.
 
 
-[Loom Video Presentation](https://www.loom.com/share/d944d03df6ae4517b6de41aefbb00da7)
+
 
 ## 🛠 Built With <a name="built-with"></a>
     HTML
@@ -77,7 +77,7 @@ We will also dynamically modify the DOM and add basic events.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[NUST Programming Competition link](https://lucash2022.github.io/Capstone-Project-Competition-page/)
+[Awesome Book]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

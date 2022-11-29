@@ -7,26 +7,34 @@
     <link rel="stylesheet" href="index.css">
     <title>Awesome Book List Project</title>
 </head>
-<body class="header">
+<body>
+  <div class="container mt-4">
+    <h1 class="display-4 text-center">
+      Awersome Book List</h1>
+      <table class="table table-striped mt-5">
+    
+        <tbody id="book-list">
+         
+        </tbody>
+        
+      </table>
+      <br>
+      <br>
+      <form id="book-form">
+      
+          <input type="text" id="title" class="form-control" value="Title">
+       
+        <br>
+        <br>
+          <input type="text" id="author" class="form-control" value="Author">
+        <br>
+        <br>
+        <input type="submit" value="Add" class="btn btn-primary btn-block">
+      </form>
 
-  <main class="all-sections">
-    <section class="book-section sections sec1 activesec" id="books">
-      <h1>All awesome books</h1>
-     
-  </section>
-  <section class="form-section sections sec2" id="inputss">
-    <form class="form-container">
-        <h2>Add new book here</h2>
-        <input type="text" class="title book-title" placeholder="Title" required>
-        <br>
-        <br>
-        <input type="text" placeholder="Author" class="author book-author" required>
-      <br>
-      <br>
-        <input onclick="addBooks()" type="submit" class="add-btn add-book" value="Add">
-    </form>
-</section>
-  </main>
+  </div>
+
+
   <script src="main.js"></script>
 </body>
 </html>

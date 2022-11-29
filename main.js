@@ -1,94 +1,80 @@
-const booksArr = [
-  {
-    Title : "lorem ipsum",
-    Author : "Testeroo Testyy" 
-  },
-  {
-    Title : "Second Book",
-    Author : "Testeroo Testyy" 
+// Book Class: Represents a Book
+class Book {
+  constructor(title, author) {
+    this.title = title;
+    this.author = author;
   }
-]
-
-
-
-
-booksArr.map((item,index) => document
-  .getElementById('books').innerHTML += `
-  <section class="books-wrapper">
-  <table class="book-container"> 
-  <tr>
-    <td>
-     ${item.Title}
-       </td>
-  </tr>
-
-  <tr>
-    <td>${item.Author}</td>    
-  </tr>
-</table>
-<input class='removeButton${index}' type="button" value="Remove">
-<hr>
-  </section>`);
-
-
-function loadBooks(title,author){
-  document.getElementById('books').innerHTML += `
-  <section class="books-wrapper">
-  <table class="book-container"> 
-  <tr>
-    <td>
-     ${title}
-       </td>
-  </tr>
-
-  <tr>
-    <td>${author}</td>    
-  </tr>
-</table>
-<input type="button" value="Remove">
-<hr>
-  </section>`;
-
 }
 
+// UI Class: Handle UI Tasks
+class UI {
+  static displayBooks() {
+    const StoredBooks = [
+      {
+        title: 'lorem ipsum',
+        author: 'Testeroo Testyy',
+      },
+      {
+        title: 'Second Book',
+        author: 'Testeroo Testyy',
+      },
+    ];
+    const books = StoredBooks;
+    books.forEach((book) => UI.addBookToList(book));
+  }
 
-  function addBooks() {
-    const form = document.querySelector('form');
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-  
-    const title = document.querySelector('.title').value
-    const author = document.querySelector('.author').value
-    if(title!='' && author!=''){
-      loadBooks(title,author);
-    booksArr.push({title,author})
-    localStorage.setItem('books', JSON.stringify(booksArr));
+  static addBookToList(book) {
+    const list = document.querySelector('#book-list');
+    const row = document.createElement('tr');
+    row.innerHTML = `
+      <td>${book.title}
+      </td>
+      <td>${book.author}</td>
+      <td>
+      <input class='btn btn-danger btn-sm delete' type="button" value="Remove">
+      </td>
+      <hr>
+    `;
+    list.appendChild(row);
+  }
+
+  // delete function
+  static deleteBook(el) {
+    if (el.classList.contains('delete')) {
+      el.parentElement.parentElement.remove();
     }
-    document.querySelector('.title').value = '';
-    document.querySelector('.author').value = ''; 
-    });
-    
   }
 
-
-//     deleteBooks();
-// console.log(booksArr)
-  
-
-  function removeBooks() {
-   this.bookContainer.addEventListener('click', (e) =>  {
-      if(e.target.classList.contains('removeButton${index}')){
-        e.target.parentElement.parentElement.remove();
-      }
-      this.deleteBooks();
-    });
+  // Create clear fields function
+  static clearFields() {
+    document.querySelector('#title').value = '';
+    document.querySelector('#author').value = '';
   }
+}
 
-  // function removeBooks() { 
-  //   const filteredBooksArr = booksArr.filter ((item) => {
-  //     return bookArr(0);
+// Event: Display Books
+document.addEventListener('DOMContentLoaded', UI.displayBooks);
 
-  //   }
-  // )}
+// Event: Add a Book
+document.querySelector('#book-form').addEventListener('submit', (e) => {
+  // Prevent actual submit
+  e.preventDefault();
 
- 
+  // Get form values
+  const title = document.querySelector('#title').value;
+  const author = document.querySelector('#author').value;
+
+  // Instatiate book
+  const book = new Book(title, author);
+
+  // Add Book to UI
+  UI.addBookToList(book);
+
+  // Clear fields
+  UI.clearFields();
+});
+
+// Delete a book
+document.querySelector('#book-list').addEventListener('click', (e) => {
+  UI.deleteBook(e.target);
+});
