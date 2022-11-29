@@ -1,7 +1,6 @@
 /* eslint-disable linebreak-style */
 import Book from './module/constructor.js';
 import Store from './module/store.js';
-
 // UI Class: Handle UI Tasks
 class UI {
   static displayBooks() {
@@ -15,10 +14,10 @@ class UI {
     const row = document.createElement('tr');
     // element.classList.add('table-row');
     row.innerHTML = `
-    <td class="book-title">"${book.title}" by ${book.author}</td>
-    <td>
-    <input class='btn btn-danger btn-sm delete' type="button" value="Remove">
-   </td>
+      <td class="book-title">"${book.title}" by ${book.author}</td>
+      <td>
+      <input class='btn btn-danger btn-sm delete' type="button" value="Remove">
+     </td>
     `;
     list.appendChild(row);
   }
