@@ -58,9 +58,23 @@ After you're finished please remove all the comments and instructions!
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 Awesome Book<a name="about-project"></a>
+<table style="border: 2px solid black;">
+  <tr>
+    <th style="border: 1px solid black;">Desktop Version</th>
+    <th>Mobile Version</th>
+  </tr>
+  <tr style="border: 2px solid black;">
+  <td style="border: 1px solid black;"><img src="/images/DesktopVersionList.jpg" alt="Desktop Version" width="140"  height="auto" /></td>
+  <td><img src="/images/MobileVersionList.jpg" alt="Mobile Version" width="140"  height="auto" /></td>
+  </tr>
+</table>
+**Awesome books** is a simple website that displays a list of books and allows you to add and remove books from that list. 
 
-**[Awesome books]** is about a basic website that allows users to add/remove books from a list. We will achieve that by using JavaScript objects and arrays. 
-We will also dynamically modify the DOM and add basic events.
+Here are some features of the page:
+
+Add a book to your collection.
+Remove a book from your collection.
+Store your data history in the browser's memory.
 
 
 
