@@ -2,44 +2,156 @@
 
 * {
   box-sizing: border-box;
-  margin: 0.2vw;
   padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body {
   font-family: 'Comic Neue', cursive;
+  font-size: 16px;
+  color: #212529;
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
-.table {
+.nav-list {
   display: flex;
-  flex-direction: column;
 }
 
-#book-list {
+a {
+  text-decoration: none !important;
+}
+
+.header {
+  z-index: 9;
+}
+
+.footer,
+.header {
+  background-color: #151a1a;
+}
+
+#by1,
+.humburger,
+.closeIcon,
+.content {
+  display: none;
+}
+
+.form-group {
+  margin: 30px auto;
+  width: 400px;
+}
+
+.content.active {
+  display: block;
+}
+
+.page-title a,
+.nav-list .nav-item {
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.flex-center-column {
   display: flex;
-  flex-direction: column;
-}
-
-tr {
-  display: flex;
-  justify-content: space-between;
-}
-
-.btn {
-  width: fit-content;
-}
-
-#book-form {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.book-title {
-  justify-self: flex-start;
+.book-list {
+  margin: 20px auto 100px;
+  width: 95%;
 }
 
-.line {
-  background-color: black;
+.book-list .list-title {
+  margin-top: 6px;
+  width: 90%;
+  border-radius: 5px;
+}
+
+#listDisplay {
+  border: 2px solid #1b1b1c;
+}
+
+.list-output .book {
+  position: relative;
+  width: 97%;
+  margin: 3px auto;
+  display: flex;
+}
+
+.nav-list li a.active {
+  border-bottom: 3px solid #fff;
+  padding-top: 10px !important;
+}
+
+.list-output .book:first-child {
+  margin-top: 10px;
+}
+
+.list-output .book:last-child {
+  margin-bottom: 10px;
+}
+
+div.list-output .book:nth-of-type(odd) {
+  background-color: lightgrey;
+}
+
+.removeBtn {
+  border: 1px solid red;
+  box-shadow: 3px 3px 0 0 #c9c5c5;
+  color: black;
+  background-color: darkgray
+}
+
+.removeBtn:hover {
+  background-color: red;
+  color: #fff;
+}
+
+.list-title h3::after {
+  margin-top: 10px;
+  content: '';
   height: 2px;
-  width: 20%;
-  margin-left: 40%;
+  background-color: #212529;
+  width: 70px;
 }
+
+.main-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.contactBox {
+  margin: 30px auto;
+}
+
+.contact-title h3::after,
+.form-title h3::after {
+  content: '';
+  margin-top: 10px;
+  height: 2px;
+  background-color: #212529;
+  width: 120px;
+}
+
+.contact-title h3::after {
+  width: 150px;
+}
+
+.input-text:first-child {
+  margin-bottom: 10px;
+}
+
+input::placeholder {
+  font-size: 16px;
+}
+
+.clickable:hover {
+  cursor: pointer;
+}
+

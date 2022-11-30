@@ -1,10 +1,8 @@
 /* eslint-disable linebreak-style */
 import Book from './module/constructor.js';
 import Store from './module/store.js';
-import Navigation from './module/navigation.js';
 import Layout from './module/layout.js';
 
-const date = window.luxon;
 
 export default class UI {
   static displayBook() {
