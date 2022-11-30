@@ -16,38 +16,26 @@ body {
   position: relative;
 }
 
-.nav-list {
-  display: flex;
-}
+.nav-list { display: flex; }
 
-a {
-  text-decoration: none !important;
-}
+a { text-decoration: none !important; }
 
-.header {
-  z-index: 9;
-}
+.header { z-index: 9; }
 
 .footer,
-.header {
-  background-color: #151a1a;
-}
+.header { background-color: #151a1a; }
 
 #by1,
 .humburger,
 .closeIcon,
-.content {
-  display: none;
-}
+.content { display: none; }
 
 .form-group {
   margin: 30px auto;
   width: 400px;
 }
 
-.content.active {
-  display: block;
-}
+.content.active { display: block; }
 
 .page-title a,
 .nav-list .nav-item {
@@ -73,9 +61,7 @@ a {
   border-radius: 5px;
 }
 
-#listDisplay {
-  border: 2px solid #1b1b1c;
-}
+#listDisplay { border: 2px solid #1b1b1c; }
 
 .list-output .book {
   position: relative;
@@ -89,17 +75,11 @@ a {
   padding-top: 10px !important;
 }
 
-.list-output .book:first-child {
-  margin-top: 10px;
-}
+.list-output .book:first-child { margin-top: 10px; }
 
-.list-output .book:last-child {
-  margin-bottom: 10px;
-}
+.list-output .book:last-child { margin-bottom: 10px; }
 
-div.list-output .book:nth-of-type(odd) {
-  background-color: lightgrey;
-}
+div.list-output .book:nth-of-type(odd) { background-color: lightgrey; }
 
 .removeBtn {
   border: 1px solid red;
@@ -126,9 +106,7 @@ div.list-output .book:nth-of-type(odd) {
   margin: 0 auto;
 }
 
-.contactBox {
-  margin: 30px auto;
-}
+.contactBox { margin: 30px auto; }
 
 .contact-title h3::after,
 .form-title h3::after {
@@ -139,19 +117,102 @@ div.list-output .book:nth-of-type(odd) {
   width: 120px;
 }
 
-.contact-title h3::after {
-  width: 150px;
+.contact-title h3::after { width: 150px; }
+
+.input-text:first-child { margin-bottom: 10px; }
+
+input::placeholder { font-size: 16px; }
+
+.clickable:hover { cursor: pointer; }
+
+@media screen and (max-width: 632px) {
+  .change-menu {
+    background: #212529;
+    height: calc(100vh - 41px);
+    width: 100%;
+    opacity: 0.92;
+    box-shadow: 0 45px 45px rgba(198, 199, 212, 0.09);
+    animation: animMenu 1s ease;
+    transition: all 1s ease;
+  }
+
+  .humburger {
+    display: inline;
+    position: absolute;
+    right: 15px;
+    bottom: 5px;
+  }
+
+  .list-title h3 { padding: 0 !important; }
+
+  #clock-parag { padding-top: 0 !important; }
+
+  .nav-list li a.active { border: none; }
+
+  #by,
+  .change-menu .page-title,
+  .nav-list,
+  .change-menu .humburger { display: none; }
+
+  #by1 { display: inline; }
+
+  .change-menu .nav-list {
+    position: absolute;
+    display: block;
+    top: 0;
+    padding: 0 2px;
+    line-height: 50px;
+  }
+
+  .nav-list li a { font-size: 20px; }
+
+  .nav-list li:nth-child(2) a { margin-left: 0 !important; }
+
+  .change-menu .nav-list li:hover a {
+    border: 3px solid #fff;
+    padding: 8px 10px;
+  }
+
+  .change-menu .closeIcon {
+    display: inline;
+    border: 1px solid rgb(129, 122, 122);
+    border-radius: 4px;
+    padding: 1px 10px 3px;
+  }
+
+  .book .blck { display: block !important; }
+
+  #removeBtn {
+    font-size: 15px;
+    width: 55px;
+    padding: 4px !important;
+    bottom: 13px !important;
+    right: 3px !important;
+  }
+
+  #footer { height: 40px; }
 }
 
-.input-text:first-child {
-  margin-bottom: 10px;
-}
+@media screen and (max-width: 470px) {
+  .main-container { margin-top: -20px !important; }
+  #list { margin-bottom: 0; }
 
-input::placeholder {
-  font-size: 16px;
-}
+  .book span {
+    font-size: 16px;
+    line-height: 20px;
+  }
 
-.clickable:hover {
-  cursor: pointer;
-}
+  .form-group { max-width: 250px; }
 
+  #removeBtn {
+    font-size: 15px;
+    width: 50px;
+    padding: 0 !important;
+    bottom: -6px !important;
+    left: 8px !important;
+  }
+
+  #clock-parag { font-size: 14px; }
+
+  #spanAuthor { padding-bottom: 20px; }
+}
