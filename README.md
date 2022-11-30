@@ -129,7 +129,7 @@ Clone this repository to your desired folder:
 
 <!-- Author -->
 
-## 👤**Authors** <a name="author"></a>
+## 👤**Authors** <a name="authors"></a>
 <h4>Lucas Erkana</h4>
 
 - GitHub: [@githubhandle](https://github.com/Lucash2022)
