@@ -85,7 +85,7 @@ div.list-output .book:nth-of-type(odd) { background-color: lightgrey; }
   border: 1px solid red;
   box-shadow: 3px 3px 0 0 #c9c5c5;
   color: black;
-  background-color: darkgray
+  background-color: darkgray;
 }
 
 .removeBtn:hover {
