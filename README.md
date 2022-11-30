@@ -64,7 +64,7 @@ After you're finished please remove all the comments and instructions!
     <th>Mobile Version</th>
   </tr>
   <tr style="border: 2px solid black;">
-  <td style="border: 1px solid black;"><img src="/images/DesktopVersionLIST.jpg" alt="Desktop Version" width="240"  height="auto" /></td>
+  <td style="border: 1px solid black;"><img src="/images/DesktopVersionLIST.jpg" alt="Desktop Version" width="340"  height="auto" /></td>
   <td><img src="/images/MobileVersionLIST.jpg" alt="Mobile Version" width="240"  height="auto" /></td>
   </tr>
 </table>
