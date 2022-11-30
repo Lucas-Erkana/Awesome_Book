@@ -180,6 +180,8 @@ Give a ⭐️ if you like this project!
 [Font Awesome](https://fontawesome.com/search?q=book&o=r)
 
 
+[Icons8](https://icons8.com/icons/set/books)
+
 [Google Fonts](https://developers.google.com/fonts)
 
 
