@@ -33,7 +33,7 @@ After you're finished please remove all the comments and instructions!
 
 <div align="center">
 
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <img src="/images/murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>Microverse README Template</b></h3>
@@ -58,9 +58,35 @@ After you're finished please remove all the comments and instructions!
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 Awesome Book<a name="about-project"></a>
+<table style="border: 2px solid black;">
+  <tr>
+    <th style="border: 1px solid black;">Desktop Version List</th>
+    <th>Mobile Version List</th>
+    <th>Mobile Version Menu</th>
+  </tr>
+  <tr style="border: 2px solid black;">
+  <td style="border: 1px solid black;"><img src="/images/DesktopVersionLIST.jpg" alt="Desktop Version" width="340"  height="270" /></td>
+  <td><img src="/images/MobileVersionLIST.jpg" alt="Mobile Version" width="200"  height="270" /></td>
+    <td><img src="/images/MobileVersionMenu.jpg" alt="Mobile Version Menu" width="200"  height="270" /></td>
+  </tr>
+    <tr>
+    <th style="border: 1px solid black;">Add Desktop Version</th>
+    <th>Add Mobile Version</th>
+    <th>Contact Mobile Version</th>
+  </tr>
+    <tr style="border: 2px solid black;">
+  <td style="border: 1px solid black;"><img src="/images/DesktopVersionADD.jpg" alt="Desktop Version" width="340"  height="270" /></td>
+  <td><img src="/images/MobileVersionADD.jpg" alt="Mobile Version" width="200"  height="270" /></td>
+      <td><img src="/images/MobileVersionCONTACT.jpg" alt="Mobile Version Menu" width="200"  height="270" /></td>
+  </tr>
+</table>
+**Awesome books** is a simple website that displays a list of books and allows you to add and remove books from that list. 
 
-**[Awesome books]** is about a basic website that allows users to add/remove books from a list. We will achieve that by using JavaScript objects and arrays. 
-We will also dynamically modify the DOM and add basic events.
+Here are some features of the page:
+
+Add a book to your collection.
+Remove a book from your collection.
+Store your data history in the browser's memory.
 
 
 
@@ -77,7 +103,7 @@ We will also dynamically modify the DOM and add basic events.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Awesome Book]()
+[Awesome Book]( https://lucash2022.github.io/Awesome_Book/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -178,7 +204,6 @@ Give a ⭐️ if you like this project!
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 [Font Awesome](https://fontawesome.com/search?q=book&o=r)
-
 
 [Icons8](https://icons8.com/icons/set/books)
 
