@@ -177,9 +177,9 @@ Give a ⭐️ if you like this project!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-
-
-
+[Font Awesome](https://fontawesome.com/search?q=book&o=r)
+[Google Fonts](https://developers.google.com/fonts)
+[Bootsrtap](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
