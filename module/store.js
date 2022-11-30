@@ -1,3 +1,4 @@
+/* eslint class-methods-use-this: ["error", { "exceptMethods": ["changeContent", "update"] }] */
 /* eslint-disable linebreak-style */
 export default class Store {
   static getBooks() {

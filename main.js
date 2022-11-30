@@ -1,8 +1,8 @@
+/* eslint class-methods-use-this: ["error", { "exceptMethods": ["changeContent", "update"] }] */
 /* eslint-disable linebreak-style */
 import Book from './module/constructor.js';
 import Store from './module/store.js';
 import Layout from './module/layout.js';
-
 
 export default class UI {
   static displayBook() {

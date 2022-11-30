@@ -1,4 +1,5 @@
 /* eslint-disable linebreak-style */
+/* eslint class-methods-use-this: ["error", { "exceptMethods": ["changeContent", "update"] }] */
 export default class Navigation {
   constructor() {
     this.navs = document.querySelectorAll('[href]');
