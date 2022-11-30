@@ -64,8 +64,8 @@ After you're finished please remove all the comments and instructions!
     <th>Mobile Version</th>
   </tr>
   <tr style="border: 2px solid black;">
-  <td style="border: 1px solid black;"><img src="/images/DesktopVersionList.jpg" alt="Desktop Version" width="140"  height="auto" /></td>
-  <td><img src="/images/MobileVersionList.jpg" alt="Mobile Version" width="140"  height="auto" /></td>
+  <td style="border: 1px solid black;"><img src="/images/DesktopVersionLIST.jpg" alt="Desktop Version" width="140"  height="auto" /></td>
+  <td><img src="/images/MobileVersionLIST.jpg" alt="Mobile Version" width="140"  height="auto" /></td>
   </tr>
 </table>
 **Awesome books** is a simple website that displays a list of books and allows you to add and remove books from that list. 
