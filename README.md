@@ -129,14 +129,14 @@ Clone this repository to your desired folder:
 
 <!-- Author -->
 
-👤 **Authors**
-<h2>Lucas Erkana</h2>
+## 👤**Authors** <a name="author"></a>
+<h4>Lucas Erkana</h4>
 
 - GitHub: [@githubhandle](https://github.com/Lucash2022)
 - Twitter: [@twitterhandle](https://twitter.com/@Lucas_David_22)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/lucas-erkana-b30a0b3b/)
 
-<h2>Kashif-Saleem-Ghuman</h2>
+<h4>Kashif-Saleem-Ghuman</h4>
 
 - GitHub: [@githubhandle](https://github.com/Kashif-Saleem-Ghuman)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/kashif-saleem-45ba95215/)
