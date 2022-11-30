@@ -41,9 +41,6 @@ function addedSuccess() {
 
 document.addEventListener('submit', (e) => {
   e.preventDefault();
-  // if (e.target.title.value === '' || e.target.author.value === '') {
-  //   alert('Input field cannot be empty');
-  // // } else {
   const author = e.target.author.value.trim();
   const title = e.target.title.value.trim();
   const newBook = new Book(title, author);
@@ -191,7 +188,6 @@ const menu = document.querySelector('.header');
 
 document.getElementById('humburger').onclick = () => {
   menu.classList.add('change-menu');
-  // alert('hello')
 };
 
 document.getElementById('closeIcon').addEventListener('click', () => {
