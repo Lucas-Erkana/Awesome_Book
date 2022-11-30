@@ -90,9 +90,9 @@ We will also dynamically modify the DOM and add basic events.
 
 - Open the command prompt in the created directory.
 
-- On the terminal run this command git clone https://github.com/Lucash2022/Capstone-Project-Competition-page.git
+- On the terminal run this command git clone https://github.com/Lucash2022/Awesome_Book.git
 
-- Go to the repository folder using command prompt cd LucasErkanaPortfolio_Website.
+- Go to the repository folder using command prompt cd Awesome_Book.
 
 - Install the dev dependencies for linters run npm install.
 
@@ -117,7 +117,7 @@ Clone this repository to your desired folder:
 
 - Open the command prompt in the created directory.
 
-- On the terminal run this command git clone https://github.com/Lucash2022/Capstone-Project-Competition-page.git
+- On the terminal run this command git clone https://github.com/Lucash2022/Awesome_Book.git
 
 - Go to the repository folder using command prompt cd LucasErkanaPortfolio_Website.
 
@@ -129,12 +129,17 @@ Clone this repository to your desired folder:
 
 <!-- Author -->
 
-👤 **Author**
+👤 **Authors**
+<h2>Lucas Erkana</h2>
 
 - GitHub: [@githubhandle](https://github.com/Lucash2022)
 - Twitter: [@twitterhandle](https://twitter.com/@Lucas_David_22)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/lucas-erkana-b30a0b3b/)
 
+<h2>Kashif-Saleem-Ghuman</h2>
+
+- GitHub: [@githubhandle](https://github.com/Kashif-Saleem-Ghuman)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kashif-saleem-45ba95215/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -142,9 +147,11 @@ Clone this repository to your desired folder:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Implement some UX improvements: add the "More" button on the home page, include transitions and/or animation
+- Implement some UX improvements: add a home page, include transitions and/or animation
 
-- Implement additional pages, like the tickets page and the schedule page. Make sure that you have a decent mobile design for them
+- Implement additional pages, which will allow the user to Register
+
+- Implement additional pages, which will allow the user to Login
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
