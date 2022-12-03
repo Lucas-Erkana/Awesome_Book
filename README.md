@@ -1,42 +1,11 @@
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-=======
-
-## Awesome books Project
-
-This project is about a basic website that allows users to add/remove books from a list. We will achieve that by using JavaScript objects and arrays. 
-We will also dynamically modify the DOM and add basic events.
-
-
-
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-After you're finished please remove all the comments and instructions!
--->
-
 <div align="center">
 
   <img src="/images/murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>Microverse</b></h3>
 
 </div>
 
@@ -158,14 +127,21 @@ Clone this repository to your desired folder:
 ## 👤**Authors** <a name="authors"></a>
 <h4>Lucas Erkana</h4>
 
-- GitHub: [@githubhandle](https://github.com/Lucash2022)
-- Twitter: [@twitterhandle](https://twitter.com/@Lucas_David_22)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/lucas-erkana-b30a0b3b/)
+<img src="/images/github.svg" alt="logo" width="18"  height="18" />[githubhandle](https://github.com/Lucash2022)
+<br>
+<img src="/images/twitter.svg" alt="logo" width="18"  height="18" /> [twitterhandle](https://twitter.com/@Lucas_David_22)
+<br>
+<img src="/images/linkedin.svg" alt="logo" width="18"  height="18" />[linkedIn](https://www.linkedin.com/in/lucas-erkana-b30a0b3b/)
+  <br>
+<img src="/images/facebook.svg" alt="logo" width="18"  height="18" />[facebook](https://www.facebook.com/lucash.toni)
 
 <h4>Kashif-Saleem-Ghuman</h4>
 
-- GitHub: [@githubhandle](https://github.com/Kashif-Saleem-Ghuman)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kashif-saleem-45ba95215/)
+<img src="/images/github.svg" alt="logo" width="18"  height="18" />[githubhandle](https://github.com/Kashif-Saleem-Ghuman)
+<br>
+<img src="/images/linkedin.svg" alt="logo" width="18"  height="18" />[linkedIn](https://www.linkedin.com/in/kashif-saleem-45ba95215/)
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
