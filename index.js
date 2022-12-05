@@ -10,21 +10,53 @@ import {
   formSection,
   contactSection,
   dayDate,
+  booksContainer,
 } from './module/variables.js';
-import Book from './module/constructor.js';
-import Library from './module/library.js';
+// import Book from './modules/book.js';
 import { dateNow } from './module/dates.js';
 
-const library = new Library();
-library.updateBooks();
+let bookList = [];
+
+const localData = localStorage.getItem('bookList');
+if (localData !== null) {
+  bookList = JSON.parse(localData);
+}
+
+const removeBook = (bookId) => {
+  bookList = bookList.filter((book) => book.id !== parseInt(bookId, 10));
+};
+
+const storeBooks = () => {
+  localStorage.setItem('bookList', JSON.stringify(bookList));
+};
+
+// eslint-disable-next-line no-unused-vars
+const updateBooks = () => {
+  booksContainer.textContent = '';
+  bookList.forEach((book) => {
+    const booksSection = `<div class='Book__section'>
+    <div class='Book__section-item'>${book.title} by ${book.author}</div>
+    <button class='remove-button' id="${book.id}">Remove</button>
+   </div>`;
+    booksContainer.innerHTML += booksSection;
+  });
+  const removeButtons = document.querySelectorAll('.remove-button');
+  removeButtons.forEach((button) => button.addEventListener('click', (e) => {
+    removeBook(e.target.id);
+    updateBooks();
+  }));
+  storeBooks();
+};
 
 addButton.addEventListener('click', (e) => {
   e.preventDefault();
-  const Title = titleInput.value;
-  const Author = authorInput.value;
-  const newBook = new Book(Title, Author, Date.now());
-  library.bookList.push(newBook);
-  library.updateBooks();
+  const book = {
+    id: Date.now(),
+    title: titleInput.value,
+    author: authorInput.value,
+  };
+  bookList.push(book);
+  updateBooks();
   form.reset();
 });
 

@@ -10,7 +10,6 @@ header {
 
 h2 {
   text-align: center;
-  font-weight: 600;
 }
 
 section {
@@ -18,7 +17,7 @@ section {
 }
 
 .library-section {
-  padding: 10px;
+  padding: 20px;
 }
 
 .Books__Section {
@@ -124,7 +123,9 @@ form {
   border: 2px solid black;
   margin-left: 20px;
   margin-right: 20px;
-  size: 30px;
+  margin-top: -80px;
+  text-align: left;
+
 }
 
 .hide {
@@ -136,4 +137,9 @@ form {
   height: 120px;
   width: 100%;
   border: 2px solid black;
+}
+
+p {
+  text-align: left !important;
+
 }
