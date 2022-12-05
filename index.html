@@ -10,9 +10,50 @@
   <title>Awesome Book List Project</title>
   <link rel="icon" type="image/x-icon" href="/images/icons8-books-96.png">
 </head>
-<body>
-  <div id="container"></div>
 
+<body>
+  <header>
+    <nav class="navlist">
+      <h1>Awesome Books</h1>
+      <ul class="nav-list">
+        <li><a href="" class="nav-list-item" id="list-btn">List</a></li>
+        <li><a href="" class="nav-list-item" id="new-btn">Add new </a></li>
+        <li><a href="" class="nav-list-item" id="contact-btn">Contact</a></li>
+      </ul>
+    </nav>
+    <span class="date">February 16 2023, 10:56:55 pm</span>
+  </header>
+
+  <main>
+    <section class="library-section">
+      <h2>All Awesome Books</h2>
+      <div class="Books__Section"></div>
+    </section>
+    <section class="form-section hide">
+      <h2 class="heading">Add a new book</h2>
+      <form>
+        <input type="text" placeholder="Title" name="title" class="title-input" /><br /><br />
+        <input type="text" placeholder="Author" name="author" class="author-input" /><br /><br />
+        <button type="submit" class="AddButton">Add</button>
+      </form>
+    </section>
+    <section class="contact-section hide">
+      <h2 class="contact-section-heading">Contact Information</h2>
+      <p>
+        Do have any questions or you just want to say "Hello"
+      </p>
+      <p>You can reach out to us</p>
+      <ul>
+        <li>Our email: mail.mail@mail.com</li>
+        <li>Our phone number: 0043586534422</li>
+        <li>Our address: Rashford Street 56,36223, London , England</li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">Copyright</footer>
+  <br>
+  <div id="line"></div>
   <script src="https://cdn.jsdelivr.net/npm/luxon@1.25.0/build/global/luxon.min.js" crossorigin="anonymous"></script>
   <script src="index.js" type="module" ></script>
 </body>
+</html>
