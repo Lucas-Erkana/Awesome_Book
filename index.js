@@ -1,4 +1,6 @@
 /* eslint-disable max-classes-per-file */
+import Book from './module/constructor.js';
+
 const form = document.querySelector('form');
 const addButton = document.querySelector('.AddButton');
 const titleInput = document.querySelector('.title-input');
@@ -10,15 +12,6 @@ const contactSectionBtn = document.querySelector('#contact-btn');
 const librarySection = document.querySelector('.library-section');
 const formSection = document.querySelector('.form-section');
 const contactSection = document.querySelector('.contact-section');
-
-class Book {
-  constructor(title, author, id) {
-    this.title = title;
-    this.author = author;
-    this.id = id;
-  }
-}
-
 class Library {
   constructor() {
     this.bookList = [];
