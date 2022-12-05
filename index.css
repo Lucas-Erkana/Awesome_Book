@@ -10,6 +10,7 @@ header {
 
 h2 {
   text-align: center;
+  font-weight: 600;
 }
 
 section {
@@ -25,12 +26,11 @@ section {
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-color: black;
+  border: 2px solid black;
 }
 
 .Book__section {
+  padding-top: 10px;
   display: flex;
   justify-content: space-between;
   gap: 300px;
@@ -38,7 +38,8 @@ section {
 }
 
 .Book__section-item {
-  width: 200px;
+  width: 600px;
+  font-size: 30px;
 }
 
 .remove-button {

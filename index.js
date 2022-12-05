@@ -1,53 +1,19 @@
-/* eslint-disable max-classes-per-file */
+import {
+  form,
+  addButton,
+  titleInput,
+  authorInput,
+  listSectionBtn,
+  formSectionBtn,
+  contactSectionBtn,
+  librarySection,
+  formSection,
+  contactSection,
+  dayDate,
+} from './module/variables.js';
 import Book from './module/constructor.js';
-
-const form = document.querySelector('form');
-const addButton = document.querySelector('.AddButton');
-const titleInput = document.querySelector('.title-input');
-const authorInput = document.querySelector('.author-input');
-const booksContainer = document.querySelector('.Books__Section');
-const listSectionBtn = document.querySelector('#list-btn');
-const formSectionBtn = document.querySelector('#new-btn');
-const contactSectionBtn = document.querySelector('#contact-btn');
-const librarySection = document.querySelector('.library-section');
-const formSection = document.querySelector('.form-section');
-const contactSection = document.querySelector('.contact-section');
-class Library {
-  constructor() {
-    this.bookList = [];
-    const localData = localStorage.getItem('bookList');
-    if (localData !== null) {
-      this.bookList = JSON.parse(localData);
-    }
-  }
-
-  removeBook(bookId) {
-    this.bookList = this.bookList.filter(
-      (book) => book.id !== parseInt(bookId, 10),
-    );
-  }
-
-  storeBooks() {
-    localStorage.setItem('bookList', JSON.stringify(this.bookList));
-  }
-
-  updateBooks() {
-    booksContainer.textContent = '';
-    this.bookList.forEach((book) => {
-      const booksSection = `<div class='Book__section'>
-    <div class='Book__section-item'>${book.title} by ${book.author}</div>
-    <button class='remove-button' id="${book.id}">Remove</button>
-   </div>`;
-      booksContainer.innerHTML += booksSection;
-    });
-    const removeButtons = document.querySelectorAll('.remove-button');
-    removeButtons.forEach((button) => button.addEventListener('click', (e) => {
-      this.removeBook(e.target.id);
-      this.updateBooks();
-    }));
-    this.storeBooks();
-  }
-}
+import Library from './module/library.js';
+import { dateNow } from './module/dates.js';
 
 const library = new Library();
 library.updateBooks();
@@ -62,7 +28,7 @@ addButton.addEventListener('click', (e) => {
   form.reset();
 });
 
-function toggleDisplaySection(id) {
+const toggleDisplaySection = (id) => {
   if (id === 'list-btn') {
     librarySection.classList.remove('hide');
     formSection.classList.add('hide');
@@ -76,7 +42,7 @@ function toggleDisplaySection(id) {
     formSection.classList.add('hide');
     contactSection.classList.remove('hide');
   }
-}
+};
 
 listSectionBtn.addEventListener('click', (e) => {
   e.preventDefault();
@@ -92,3 +58,5 @@ contactSectionBtn.addEventListener('click', (e) => {
   e.preventDefault();
   toggleDisplaySection(e.target.id);
 });
+
+dayDate.innerHTML = dateNow;

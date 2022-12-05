@@ -1,0 +1,13 @@
+export const form = document.querySelector('form');
+export const addButton = document.querySelector('.AddButton');
+export const titleInput = document.querySelector('.title-input');
+export const authorInput = document.querySelector('.author-input');
+export const booksContainer = document.querySelector('.Books__Section');
+export const listSectionBtn = document.querySelector('#list-btn');
+export const formSectionBtn = document.querySelector('#new-btn');
+export const contactSectionBtn = document.querySelector('#contact-btn');
+export const librarySection = document.querySelector('.library-section');
+export const formSection = document.querySelector('.form-section');
+export const contactSection = document.querySelector('.contact-section');
+export const dayDate = document.querySelector('.date1');
+export const hourDate = document.querySelector('.date2');
