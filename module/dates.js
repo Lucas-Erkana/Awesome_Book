@@ -5,4 +5,5 @@ const {
   year, day, month, hour, minute, second,
 } = today;
 
-export const dateNow = `${day}/${month}/${year}  ${hour}:${minute}:${second}`;
+const dateNow = `${day}/${month}/${year}  ${hour}:${minute}:${second}`;
+export { dateNow as default };

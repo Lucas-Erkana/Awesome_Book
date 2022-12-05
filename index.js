@@ -13,7 +13,7 @@ import {
   booksContainer,
 } from './module/variables.js';
 // import Book from './modules/book.js';
-import { dateNow } from './module/dates.js';
+import * as dateNow from './module/dates.js';
 
 let bookList = [];
 
