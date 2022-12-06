@@ -89,3 +89,7 @@ contactSectionBtn.addEventListener('click', (e) => {
   e.preventDefault();
   toggleDisplaySection(e.target.id);
 });
+
+if (localStorage.getItem('bookList')) {
+  updateBooks();
+}
