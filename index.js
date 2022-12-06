@@ -12,8 +12,8 @@ import {
   dayDate,
   booksContainer,
 } from './module/variables.js';
-// import Book from './modules/book.js';
-import * as dateNow from './module/dates.js';
+// import * as dateNow from './module/dates.js';
+import { dateNow } from './module/dates.js';
 
 let bookList = [];
 
