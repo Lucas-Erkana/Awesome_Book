@@ -1,0 +1,138 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  text-align: center;
+}
+
+section {
+  min-height: 70vh;
+}
+
+.library-section {
+  padding: 20px;
+}
+
+.Books__Section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 2px solid black;
+}
+
+.Book__section {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 300px;
+  margin-bottom: 20px;
+}
+
+.Book__section-item {
+  width: 600px;
+  font-size: 15px;
+}
+
+.remove-button {
+  padding: 10px 20px;
+  background-color: lightgray;
+  border-radius: 12px;
+}
+
+.AddButton {
+  padding: 10px 20px;
+  background-color: lightgray;
+  border-radius: 12px;
+  align-self: flex-end;
+  border: 2px solid green;
+}
+
+.title-input {
+  width: 300px;
+  padding: 10px 20px;
+}
+
+.author-input {
+  width: 300px;
+  padding: 10px 20px;
+}
+
+.form-section {
+  padding: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.navlist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px 20px 40px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-list-item {
+  text-decoration: none;
+  color: black;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 5px 30px;
+}
+
+.contact-section-heading {
+  text-align: center;
+}
+
+.date {
+  display: flex;
+  align-self: flex-end;
+  padding: 0 30px;
+}
+
+.footer {
+  background-color: white;
+  padding: 10px 10px;
+  border: 2px solid black;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: -80px;
+  text-align: left;
+}
+
+.hide {
+  display: none;
+}
+
+#line {
+  background: grey;
+  height: 120px;
+  width: 100%;
+  border: 2px solid black;
+}
