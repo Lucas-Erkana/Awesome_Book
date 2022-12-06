@@ -9,14 +9,13 @@ import {
   librarySection,
   formSection,
   contactSection,
-  dayDate,
   booksContainer,
 } from './module/variables.js';
 // import * as dateNow from './module/dates.js';
-import { dateNow } from './module/dates.js';
+import setTime from './module/dates.js';
 
 let bookList = [];
-
+setTime();
 const localData = localStorage.getItem('bookList');
 if (localData !== null) {
   bookList = JSON.parse(localData);
@@ -90,5 +89,3 @@ contactSectionBtn.addEventListener('click', (e) => {
   e.preventDefault();
   toggleDisplaySection(e.target.id);
 });
-
-dayDate.innerHTML = dateNow;

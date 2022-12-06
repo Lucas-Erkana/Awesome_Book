@@ -1,8 +1,12 @@
-const date = window.luxon;
-const today = date.DateTime.local();
+import { DateTime } from './luxon.js';
 
-const {
-  year, day, month, hour, minute, second,
-} = today;
+const dateDisplay = document.querySelector('.date1');
+const setTime = () => {
+  const now = DateTime.now();
+  const date = now.toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS);
+  dateDisplay.textContent = date;
+};
 
-export const dateNow = `${day}/${month}/${year}  ${hour}:${minute}:${second}`;
+setInterval(setTime, 1000);
+
+export default setTime;
