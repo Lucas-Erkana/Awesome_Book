@@ -13,7 +13,7 @@ h2 {
 }
 
 section {
-  min-height: 70vh;
+  min-height: 60vh;
 }
 
 .library-section {
@@ -45,7 +45,7 @@ section {
   padding: 10px 20px;
   background-color: grey;
   border-radius: 12px;
-  border: 2px solid red;
+  border: 4px solid red;
 }
 
 .AddButton {
@@ -53,16 +53,17 @@ section {
   background-color: gray;
   border-radius: 12px;
   align-self: flex-end;
-  border: 2px solid green;
+  border: 4px solid green;
+  width: 400px;
 }
 
 .title-input {
-  width: 300px;
+  width: 400px;
   padding: 10px 20px;
 }
 
 .author-input {
-  width: 300px;
+  width: 400px;
   padding: 10px 20px;
 }
 
@@ -85,6 +86,8 @@ form {
   justify-content: space-between;
   align-items: center;
   padding: 0 40px 20px 40px;
+  border: 4px solid black;
+  margin-top: 2px;
 }
 
 .nav-list {
@@ -96,6 +99,12 @@ form {
 .nav-list-item {
   text-decoration: none;
   color: black;
+  font-size: 20px;
+}
+
+#list-btn :hover {
+  background-color: blue;
+  border-bottom: 2px solid blue;
 }
 
 .contact-section {
@@ -118,9 +127,13 @@ form {
 }
 
 .footer {
-  text-align: center;
-  background-color: beige;
-  padding: 50px 20px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: white;
+  padding: 30px 10px;
+  border: 4px solid black;
+  margin-bottom: auto;
 }
 
 .hide {
