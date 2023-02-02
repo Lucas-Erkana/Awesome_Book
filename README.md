@@ -139,7 +139,7 @@ Clone this repository to your desired folder:
 
 <img src="/images/github.svg" alt="logo" width="18"  height="18" />[githubhandle](https://github.com/Kashif-Saleem-Ghuman)
 <br>
-<img src="/images/linkedin.svg" alt="logo" width="18"  height="18" />[linkedIn](https://www.linkedin.com/in/kashif-saleem-45ba95215/)
+<img src="/images/linkedin.svg" alt="logo" width="18"  height="18" />[linkedIn](https://www.linkedin.com/in/kashifsaleemghuman/)
 
 
 
