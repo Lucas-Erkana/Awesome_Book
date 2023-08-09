@@ -72,7 +72,7 @@ Store your data history in the browser's memory.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Awesome Book]( https://lucash2022.github.io/Awesome_Book/)
+[Awesome Book]( https://Lucas-Erkana.github.io/Awesome_Book/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -85,7 +85,7 @@ Store your data history in the browser's memory.
 
 - Open the command prompt in the created directory.
 
-- On the terminal run this command git clone https://github.com/Lucash2022/Awesome_Book.git
+- On the terminal run this command git clone https://github.com/Lucas-Erkana/Awesome_Book.git
 
 - Go to the repository folder using command prompt cd Awesome_Book.
 
@@ -112,7 +112,7 @@ Clone this repository to your desired folder:
 
 - Open the command prompt in the created directory.
 
-- On the terminal run this command git clone https://github.com/Lucash2022/Awesome_Book.git
+- On the terminal run this command git clone https://github.com/Lucas-Erkana/Awesome_Book.git
 
 - Go to the repository folder using command prompt cd LucasErkanaPortfolio_Website.
 
@@ -127,7 +127,7 @@ Clone this repository to your desired folder:
 ## 👤**Authors** <a name="authors"></a>
 <h4>Lucas Erkana</h4>
 
-<img src="/images/github.svg" alt="logo" width="18"  height="18" />[githubhandle](https://github.com/Lucash2022)
+<img src="/images/github.svg" alt="logo" width="18"  height="18" />[githubhandle](https://github.com/Lucas-Erkana)
 <br>
 <img src="/images/twitter.svg" alt="logo" width="18"  height="18" /> [twitterhandle](https://twitter.com/@Lucas_David_22)
 <br>
@@ -163,7 +163,7 @@ Clone this repository to your desired folder:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Lucash2022/Awesome_Book/issues/2).
+Feel free to check the [issues page](https://github.com/Lucas-Erkana/Awesome_Book/issues/2).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
